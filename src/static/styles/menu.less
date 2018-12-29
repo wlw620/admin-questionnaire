@@ -1,0 +1,81 @@
+.menu {
+  height: 100vh;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.layout-con {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.menu-item span {
+  display: inline-block;
+  overflow: hidden;
+  width: 69px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.menu-item i {
+  transform: translateX(0px);
+  font-size: 16px;
+  margin-top:0;
+}
+
+.collapsed-menu span {
+  display: none;
+  width: 0px;
+}
+
+.collapsed-menu i {
+  transform: translateY(12px);
+  vertical-align: middle;
+  margin-top: -24px;
+}
+
+.ivu-menu-item,
+.ivu-menu-submenu {
+  display: block;
+  text-align: left;
+  width: 200px;
+}
+
+.collapsed-menu .ivu-menu-item,
+.collapsed-menu .ivu-menu-submenu {
+  text-align: left;
+}
+
+
+.collapsed-menu .ivu-menu-item-active:after {
+  right: 122px !important;
+}
+
+.ivu-layout-sider{
+  transition:none !important;
+}
+.ivu-menu{
+  // padding-bottom: 80px;
+}
+
+.logo-con {
+  box-sizing: border-box;
+  width: 140px;
+  padding: 8px 10px 4px 10px;
+  margin: 0 30px 15px 20px;
+  img {
+    width: 140px;
+  }
+}
+
+
+.collapsed-menu .logo-con {
+  width: 45px;
+  padding: 0px;
+  overflow: hidden;
+  padding-top: 12px;
+  margin-left: 18px;
+}
